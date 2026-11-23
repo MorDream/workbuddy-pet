@@ -1,0 +1,25 @@
+{
+  "name": "workbuddy-pet",
+  "version": "0.1.0",
+  "description": "A desktop pet for WorkBuddy that mirrors real-time agent task progress. Local-only HTTP control + transparent Electron window. Animation assets reused from dsh-pet (CC BY-NC-SA 4.0).",
+  "type": "module",
+  "bin": {
+    "wbpet": "bin/wbpet.mjs"
+  },
+  "scripts": {
+    "start": "node scripts/launch.mjs",
+    "serve": "node src/server.mjs",
+    "pet": "node scripts/launch.mjs",
+    "install-hooks": "node scripts/install-hooks.mjs",
+    "uninstall-hooks": "node scripts/uninstall-hooks.mjs",
+    "fetch-assets": "node scripts/fetch-assets.mjs",
+    "test": "node tests/smoke.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^45.4.1"
+  }
+}
