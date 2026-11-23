@@ -44,6 +44,8 @@ npm run fetch-assets        # 从 GitHub API 拉取 WebM 动画素材
 npm start                   # 启动本地控制服务 + 透明桌宠窗口
 ```
 
+> **Windows 想让宠物脱离终端常驻**：直接双击项目根目录的 `start.vbs`。它会先清掉 WorkBuddy 注入的 `ELECTRON_RUN_AS_NODE` / `NODE_OPTIONS`（否则 Electron 会以 Node 模式启动、不显示窗口），再拉起独立进程；关掉终端宠物也不会消失。
+
 也可以只跑控制服务（配合浏览器或自己的窗口）：
 
 ```bash
